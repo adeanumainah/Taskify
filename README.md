@@ -1,6 +1,3 @@
-Tentu! Ini saya buatkan draft README untuk proyekmu berdasarkan fitur-fitur yang kamu sebutkan:
-
----
 
 # 📋 Project Task Management System
 
