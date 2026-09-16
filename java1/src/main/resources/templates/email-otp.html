@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Password</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e9ecef;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            max-width: 600px;
+            margin: 50px auto;
+            text-align: center;
+        }
+        h2 {
+            color: #333;
+        }
+        .otp {
+            font-size: 36px;
+            font-weight: bold;
+            color: #2e86de;
+            margin: 20px 0;
+            padding: 10px;
+            border: 2px dashed #2e86de;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .expired {
+            color: #c0392b;
+            font-weight: bold;
+        }
+        .footer {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Lupa Password</h2>
+        <p>Halo <span th:text="${username}"></span>,</p>
+        <p>Berikut adalah kode OTP Anda untuk mereset password :</p>
+        <p class="otp" th:text="${otp}"></p>
+        <p>OTP ini akan kadaluarsa pada :</p>
+        <p class="expired" th:text="${expiredTime}"></p>
+        <div class="footer">
+            <p>Jika Anda tidak merasa lupa password, silakan abaikan email ini.</p>
+            <p>Terima kasih!</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Pengingat Tugas</title>
+</head>
+<body>
+    <h2>Hai, <span th:text="${namaUser}">User</span> 👋</h2>
+    <p>Ini adalah pengingat bahwa kamu punya tugas <strong th:text="${judulTugas}">judul</strong> yang akan <span style="color:red">berakhir besok</span>.</p>
+    <p>Deadline: <strong th:text="${deadline}">Tanggal</strong></p>
+    <br/>
+    <p>Jangan lupa yaa! Semangat selalu 💪</p>
+</body>
+</html>
